@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheat Sheet Bio1203</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script defer>
+      $(document).ready(function () {
+        let titre = $(".semaineTitre");
+        let toggleButton = $(".toggle");
+        let open = true;
+
+        titre.click(function () {
+          $(this).next(".semaineContenu").slideToggle("fast");
+        });
+
+        toggleButton.click(function () {
+          if ($(".semaineContenu").is(":visible")) {
+            $(".semaineContenu").slideUp("fast");
+          } else {
+            $(".semaineContenu").slideDown("fast");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Fiche de Révision pour le cours d'introduction à la génétique.</h1>
+    </header>
+
+    <main class="container">
+      <section class="semaine">
+        <h2 class="semaineTitre">Semaine 2: La substance de l'hérédité</h2>
+
+        <div class="semaineContenu">
+          <div class="division">
+            <h3>1. Substance de l'Hérédité :</h3>
+            <p>Avant les travaux d'Avery et al. (1944), beaucoup croyaient que l'hérédité était due aux protéines (P) parce que :</p>
+            <ul>
+              <li><strong>Diversité des Protéines :</strong> 20 acides aminés permettent des structures/fonctions complexes.</li>
+              <li><strong>Rôles Biologiques Connus :</strong> Les protéines sont connues pour catalyser des réactions et remplir des fonctions essentielles.</li>
+              <li><strong>Mécompréhension de l'ADN :</strong> Le rôle de l'ADN était sous-estimé ; considéré comme une substance de réserve simple.</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>2. Expérience d'Inoculation de Virus :</h3>
+            <p><strong>Mélanges :</strong></p>
+            <ul>
+              <li>(a) P I + P II → Pas de virions (uniquement des protéines).</li>
+              <li>(b) N I + N II → Virions des souches I et II (ARN mélangé).</li>
+              <li>(c) P I + N II → Virions de la souche II (ARN de II).</li>
+              <li>(d) P II + N I → <strong>Uniquement des virions de la souche I</strong> (ARN de I).</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>3. Pourcentages des Bases Azotées :</h3>
+            <p>Analyse de l’ADN d'une bactérie : 16,6% de thymine et 32,6% de guanine.</p>
+            <p>Calcul :</p>
+            <ul>
+              <li>Somme des autres bases : 100 - (16,6 + 32,6) = 50,8%</li>
+              <li>Adénine (A) ≈ 17,14%</li>
+              <li>Cytosine (C) ≈ 33,66%</li>
+            </ul>
+            <p><strong>Pourcentages :</strong> A ≈ 17,14%, T = 16,6%, C ≈ 33,66%, G = 32,6%</p>
+          </div>
+
+          <div class="division">
+            <h3>4. Phénomène Biologique Inexistant :</h3>
+            <p>Si la substance de l’hérédité était invariante, le phénomène de <strong>l'évolution</strong> serait inexistant.</p>
+          </div>
+
+          <div class="division">
+            <h3>5. Rapport ADN dans l'Expérience de Meselson et Stahl :</h3>
+            <p>Si on poursuit l'expérience jusqu'à la génération 4, le rapport entre l'ADN de poids intermédiaire et celui de poids léger serait de <strong>2:14</strong>.</p>
+          </div>
+
+          <div class="division">
+            <h3>6. Types d'ADN à la Génération 4 (Réplication Dispersive) :</h3>
+            <p>À la génération 4, il y aurait un seul type d'ADN, un tout petit peu plus lourd que l’ADN 14N.</p>
+          </div>
+
+          <div class="division">
+            <h3>7. Direction de l'Addition des Nucléotides :</h3>
+            <p>Elle se fait sur la nouvelle chaîne de <strong>5' vers 3'</strong>, c'est-à-dire que les nucléotides sont ajoutés à l'extrémité 3' de la chaîne en croissance.</p>
+          </div>
+
+          <div class="division">
+            <h3>8. Chaine Complémentaire de l'ADN :</h3>
+            <p>Comme en (a), la chaîne complémentaire sera la même : <strong>5'TAGCCTGA3'</strong>.</p>
+          </div>
+
+          <div class="division">
+            <h3>9. Pourcentages des Bases Azotées dans l'ADN Double Brin :</h3>
+            <p>Oui, parce qu'une purine est toujours associée à une pyrimidine. Par exemple, si T = 15%, alors A = 15%, donc G + C = 70%. Ainsi, G et C = 35% chacun.</p>
+          </div>
+
+          <div class="division">
+            <h3>10. Échantillon d'Organisme :</h3>
+            <p>C'est l'échantillon 3, provenant d'un organisme où A + T/G + C = 30/70, alors que les échantillons 1 et 2 proviennent d'organismes avec A + T/G + C = 70/30.</p>
+          </div>
+
+          <div class="division">
+            <h2>11. Termes à Définir</h2>
+            <ul>
+              <li><strong>Procaryote</strong> : Organisme unicellulaire dépourvu de noyau et d'organites membraneux, tel que les bactéries.</li>
+              <li><strong>Phage Tempéré</strong> : Virus qui infecte les bactéries et peut se reproduire de manière lysogène, intégrant son ADN dans le génome de l'hôte.</li>
+              <li><strong>Prototrophe</strong> : Organisme capable de synthétiser tous les nutriments nécessaires à sa croissance à partir de sources simples.</li>
+              <li><strong>Eucaryote</strong> : Organisme dont les cellules possèdent un noyau bien défini et des organites membraneux, incluant les plantes, les animaux et les champignons.</li>
+              <li><strong>Bactérie Lysogène</strong> : Bactérie qui héberge un phage tempéré dans son ADN sans lyse cellulaire immédiate.</li>
+              <li><strong>Auxotrophe</strong> : Organisme qui nécessite des nutriments spécifiques qu'il ne peut pas synthétiser lui-même.</li>
+              <li><strong>Virus</strong> : Agent infectieux acellulaire qui ne peut se reproduire qu'à l'intérieur des cellules hôtes.</li>
+              <li><strong>Clone</strong> : Groupe de cellules ou d'organismes génétiquement identiques dérivés d'une seule cellule ou d'un seul individu.</li>
+              <li><strong>Conjugaison</strong> : Processus de transfert de matériel génétique entre bactéries via un contact direct, souvent par un pilus.</li>
+              <li><strong>Bactérie</strong> : Micro-organisme unicellulaire procaryote, jouant un rôle essentiel dans divers écosystèmes.</li>
+              <li><strong>Parasexualité</strong> : Échange de matériel génétique entre cellules sans reproduction sexuée, courant chez certaines bactéries et champignons.</li>
+              <li><strong>Milieu Minimum</strong> : Milieu de culture contenant uniquement les nutriments essentiels nécessaires à la croissance d'un organisme.</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h2>2-12 Quelles sont les affirmations vraies ?</h2>
+            <ul>
+              <li><strong>a)</strong> Les gènes bactériens sont portés par un seul chromosome linéaire. <strong>Faux</strong></li>
+              <li><strong>b)</strong> Les phages intégrés dans le chromosome bactérien sont dits lysogènes. <strong>Faux</strong></li>
+              <li><strong>c)</strong> L'auxotrophie correspond à la capacité d'une bactérie à proliférer sur milieu minimum. <strong>Faux</strong></li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h2>2-13 Quelles sont les affirmations vraies ?</h2>
+            <ul>
+              <li><strong>a)</strong> Le facteur F n'est pas intégré dans le chromosome d'une bactérie Hfr. <strong>Faux</strong></li>
+              <li><strong>b)</strong> Les pili sexuels relient deux bactéries F+ lors de la conjugaison. <strong>Faux</strong></li>
+              <li><strong>c)</strong> Le transfert d'ADN d'une bactérie Hfr vers une bactérie F- est unidirectionnel. <strong>Vrai</strong></li>
+              <li><strong>d)</strong> C'est sous la forme monobrin que l'ADN est transféré lors de la conjugaison. <strong>Vrai</strong></li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h2>2-14</h2>
+            <p>
+              Une bactérie qui possède le facteur F peut le transférer à une bactérie qui ne le possède pas. Ainsi, des bactéries auxotrophes peuvent devenir prototrophes. Par quel phénomène peut
+              s’effectuer le transfert des gènes menant à la prototrophie ?
+            </p>
+            <p>Le transfert des gènes menant à la prototrophie peut s’effectuer par <strong>conjugaison</strong>.</p>
+            <p>Deux situations qui permettraient ce transfert :</p>
+            <ul>
+              <li>1. Lorsqu'une bactérie F+ transfère son ADN à une bactérie F- via un pilus sexuel.</li>
+              <li>2. Lorsqu'une bactérie Hfr transfère une partie de son ADN chromosomique à une bactérie F- pendant la conjugaison.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="semaine">
+        <h2 class="semaineTitre">Semaine 3: Mitose, Méiose</h2>
+
+        <div class="semaineContenu">
+          <div class="division">
+            <h3>1. Processus : Autoduplication</h3>
+            <p>Un chromosome persiste à travers les générations de cellules et d'individus par :</p>
+            <ul>
+              <li><strong>Autoduplication :</strong> Réplication lors de la division cellulaire.</li>
+              <li><strong>Transmission héréditaire :</strong> Transmission du matériel génétique par les gamètes.</li>
+              <li><strong>Mécanismes de réparation de l'ADN :</strong> Correction des mutations pour stabiliser le matériel génétique.</li>
+              <li><strong>Évolution et sélection naturelle :</strong> Adaptation par mutation et sélection des chromosomes avantageux.</li>
+            </ul>
+          </div>
+
+          <div class="division"><p>Ajouter graphe de méiose.</p></div>
+
+          <div class="division">
+            <h3>3. Nombre Chromosomique de Cannabis sativa</h3>
+            <p>Le nombre chromosomique somatique de Cannabis sativa est 2n = 20. Voici le nombre de chromosomes pour différents types de cellules :</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Type de cellule</th>
+                  <th>Nombre de chromosomes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Microsporocyte de 1er ordre</td>
+
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Microspore</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Noyau de la cellule végétative</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Synergide</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Noyau du zygote</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Noyau de cellule embryonnaire</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Noyau d'une cellule d'albumen</td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="division">
+            <h3>4. Définitions</h3>
+            <ul>
+              <li>
+                <strong>Homologue :</strong> Se dit de chromosomes qui ont la même structure et la même séquence de gènes, mais peuvent avoir des allèles différents. Un organisme diploïde possède une
+                paire de chromosomes homologues.
+              </li>
+              <li>
+                <strong>Cytocinèse :</strong> Processus par lequel le cytoplasme d'une cellule se divise, aboutissant à la formation de deux cellules filles distinctes, généralement après la mitose ou
+                la méiose.
+              </li>
+              <li>
+                <strong>Carotype :</strong> Représentation graphique du nombre, de la forme et de la taille des chromosomes d'un organisme, généralement obtenue à partir de cellules en division.
+              </li>
+              <li>
+                <strong>Interphase :</strong> Phase du cycle cellulaire où la cellule se prépare à la division. Elle est subdivisée en trois étapes : la phase G1 (croissance), la phase S (réplication
+                de l'ADN) et la phase G2 (préparation à la mitose).
+              </li>
+              <li>
+                <strong>Division équationnelle :</strong> Type de division cellulaire (mitose) où le nombre de chromosomes reste constant, chaque cellule fille recevant une copie complète du matériel
+                génétique.
+              </li>
+              <li>
+                <strong>Idéogramme :</strong> Représentation graphique simplifiée du caryotype, illustrant les chromosomes d'un individu en mettant l'accent sur leur taille, leur forme et leur nombre.
+              </li>
+              <li>
+                <strong>Mitose :</strong> Processus de division cellulaire qui permet la formation de deux cellules filles génétiquement identiques à la cellule mère, impliquant plusieurs étapes :
+                prophase, métaphase, anaphase et télophase.
+              </li>
+              <li>
+                <strong>Anaphase :</strong> Étape de la mitose durant laquelle les chromatides sœurs se séparent et sont tirées vers les pôles opposés de la cellule, assurant ainsi que chaque cellule
+                fille recevra un ensemble complet de chromosomes.
+              </li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>5. Nombre de Chromatides chez l'Homme (2n = 46)</h3>
+            <p>Le nombre de chromatides à différentes phases de la mitose est le suivant :</p>
+            <ul>
+              <li><strong>(a) Prométaphase mitotique :</strong> 92 chromatides</li>
+              <li><strong>(b) Anaphase mitotique :</strong> 0 chromatides, car les chromosomes ne sont pas encore dédoublés en chromatides à ce stade.</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>6. Variation Héréditaire chez les Espèces Asexuées</h3>
+            <p>Les espèces qui ne se reproduisent qu'asexuellement, avec des divisions cellulaires exclusivement mitotiques, auront une variation héréditaire :</p>
+            <p>
+              <strong>Non.</strong> La mitose est une division équationnelle, produisant des cellules identiques. En revanche, la méiose, par la ségrégation aléatoire des homologues et le
+              crossing-over, génère de nouvelles combinaisons de chromatides, ce qui constitue une source inépuisable de variation héréditaire.
+            </p>
+          </div>
+
+          <div class="division">
+            <h3>7. Nombres Chromosomiques dans les Croisements de Cannabis sativa</h3>
+            <p>Pour les croisements entre les souches diploïdes (2n = 20) et tétraploïdes (2n = 40), les résultats sont les suivants :</p>
+
+            <h4>Croisement 2x ♀ x 4x ♂</h4>
+            <ul>
+              <li><strong>Embryon :</strong> 10 + 20 = 30</li>
+              <li><strong>Albumen :</strong> 20 + 20 = 40</li>
+            </ul>
+
+            <h4>Croisement réciproque 4x ♀ x 2x ♂</h4>
+            <ul>
+              <li><strong>Embryon :</strong> 20 + 10 = 30</li>
+              <li><strong>Albumen :</strong> 40 + 10 = 50</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>8. Recombinaison Méiotique</h3>
+            <p>Parmi les énoncés suivants, lequel est faux ?</p>
+            <ul>
+              <li>
+                <p><strong>a.</strong> Toutes les chromatides-soeurs d’un même chromosome recombinent toujours au même endroit avec les chromatides-soeurs du chromosome homologue. <em>(Faux)</em></p>
+              </li>
+              <li><strong>b.</strong> Les chiasmas commencent à se former lors du stade diplotène. <em>(Vrai)</em></li>
+              <li><strong>c.</strong> Elle permet un brassage génétique performant lors de la formation des gamètes. <em>(Vrai)</em></li>
+              <li><strong>d.</strong> Elle nécessite deux fractures distinctes sur les chromosomes homologues. <em>(Vrai)</em></li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>9. Définition d’un « Gamétophyte »</h3>
+            <p>La meilleure définition d’un « gamétophyte » ?</p>
+            <ul>
+              <li>Bien que produit par la méiose, le gamétophyte est le résultat de plusieurs mitoses de cellules haploïdes.</li>
+            </ul>
+          </div>
+
+          <div class="division">
+            <h3>10. Image des 5 sous-phases des chromosomes</h3>
+            <p>à faire...</p>
+          </div>
+        </div>
+      </section>
+
+      <button class="toggle">Toggle Button</button>
+    </main>
+  </body>
+</html>
