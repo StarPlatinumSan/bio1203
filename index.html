@@ -15,14 +15,14 @@
         let open = true;
 
         titre.click(function () {
-          $(this).next(".semaineContenu").slideToggle("fast");
+          $(this).next(".semaineContenu").slideToggle();
         });
 
         toggleButton.click(function () {
           if ($(".semaineContenu").is(":visible")) {
-            $(".semaineContenu").slideUp("fast");
+            $(".semaineContenu").slideUp();
           } else {
-            $(".semaineContenu").slideDown("fast");
+            $(".semaineContenu").slideDown();
           }
         });
       });

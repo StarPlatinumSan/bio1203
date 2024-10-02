@@ -1,98 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    background-color: #2C3E50;
-    
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+	background-color: #2a044a;
 }
 
 header {
-    background-color: #7F8C8D;
-    padding: 2rem;
+	background-color: #1b0035;
+	padding: 2rem;
 }
 
-h1, h2, h3 {
-    color: #ECF0F1;
+h1,
+h2,
+h3 {
+	color: #bc51ff;
 }
 
 h3 {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 20px;
+	list-style-type: disc;
+	margin-left: 20px;
 }
 
 section {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
 }
 
 p {
-    color: #3498DB;
+	color: #e0e0e0;
 }
 
 li {
-    color: #ECF0F1;
+	color: #ffffff;
 }
 
-td, tr, th {
-    color: #ECF0F1;
-    
+td,
+tr,
+th {
+	color: #ecf0f1;
 }
 
 td:last-child {
-    text-align: center;
+	text-align: center;
 }
 
 .division {
-    border: 1px solid white;
-    padding: 2rem;
-    /* margin-top: 0.5rem; */
+	border: 1px solid white;
+	padding: 2rem;
 }
 
 .semaineTitre {
-    color: white;
-    font-size: 2rem;
-    background-color: #7F8C8D;
-    padding: 1rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    border: 2px solid darkgray;
+	color: #bc51ff;
+	font-size: 2rem;
+	background-color: #3b0b6f;
+	padding: 1rem;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	border: 2px solid darkgray;
 }
 
 .semaineTitre:hover {
-    cursor: pointer;
-    background-color: #7b7b7b;
+	cursor: pointer;
+	background-color: #7900c4;
 }
 
 .semaineContenu {
-    border: 1px solid white;
+	border: 1px solid white;
 }
 
 .toggle {
-    position: fixed;
-    bottom: 15px;
-    right: 30px;
-    border: none;
-    background-color: black;
-    border: 2px solid white;
-    color: white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+	position: fixed;
+	bottom: 15px;
+	right: 30px;
+	border: none;
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	padding: 1rem;
+	font-size: 1.5rem;
+	transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .toggle:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: rgb(35, 35, 35);
+	cursor: pointer;
+	transform: scale(1.05);
+	background-color: rgb(35, 35, 35);
 }
