@@ -1,528 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheat Sheet Bio1203</title>
-    <link rel="stylesheet" href="style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cheat Sheet Bio1203</title>
+		<link rel="stylesheet" href="style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script defer>
-      $(document).ready(function () {
-        let titre = $(".semaineTitre");
-        let toggleButton = $(".toggle");
-        let open = true;
+		<script defer>
+			$(document).ready(function () {
+				let titre = $(".semaineTitre");
+				let toggleButton = $(".toggle");
+				let open = true;
 
-        titre.click(function () {
-          $(this).next(".semaineContenu").slideToggle();
-        });
+				titre.click(function () {
+					$(this).next(".semaineContenu").slideToggle();
+				});
 
-        toggleButton.click(function () {
-          if ($(".semaineContenu").is(":visible")) {
-            $(".semaineContenu").slideUp();
-          } else {
-            $(".semaineContenu").slideDown();
-          }
-        });
-      });
-    </script>
-  </head>
-  <body>
-    <header>
-      <h1>Fiche de Révision pour le cours d'introduction à la génétique.</h1>
-    </header>
+				toggleButton.click(function () {
+					if ($(".semaineContenu").is(":visible")) {
+						$(".semaineContenu").slideUp();
+					} else {
+						$(".semaineContenu").slideDown();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Fiche de Révision pour le cours d'introduction à la génétique.</h1>
+		</header>
 
-    <main class="container">
-      <section class="semaine">
-        <h2 class="semaineTitre">Semaine 2: La substance de l'hérédité</h2>
+		<main class="container">
+			<section class="semaine">
+				<h2 class="semaineTitre">Semaine 2: La substance de l'hérédité</h2>
 
-        <div class="semaineContenu">
-          <div class="division">
-            <h3>1. Substance de l'Hérédité :</h3>
-            <p>Avant les travaux d'Avery et al. (1944), beaucoup croyaient que l'hérédité était due aux protéines (P) parce que :</p>
-            <ul>
-              <li><strong>Diversité des Protéines :</strong> 20 acides aminés permettent des structures/fonctions complexes.</li>
-              <li><strong>Rôles Biologiques Connus :</strong> Les protéines sont connues pour catalyser des réactions et remplir des fonctions essentielles.</li>
-              <li><strong>Mécompréhension de l'ADN :</strong> Le rôle de l'ADN était sous-estimé ; considéré comme une substance de réserve simple.</li>
-            </ul>
-          </div>
+				<div class="semaineContenu">
+					<div class="division">
+						<h3>1. Substance de l'Hérédité :</h3>
+						<p>Avant les travaux d'Avery et al. (1944), beaucoup croyaient que l'hérédité était due aux protéines (P) parce que :</p>
+						<ul>
+							<li><strong>Diversité des Protéines :</strong> 20 acides aminés permettent des structures/fonctions complexes.</li>
+							<li><strong>Rôles Biologiques Connus :</strong> Les protéines sont connues pour catalyser des réactions et remplir des fonctions essentielles.</li>
+							<li><strong>Mécompréhension de l'ADN :</strong> Le rôle de l'ADN était sous-estimé ; considéré comme une substance de réserve simple.</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>2. Expérience d'Inoculation de Virus :</h3>
-            <p><strong>Mélanges :</strong></p>
-            <ul>
-              <li>(a) P I + P II → Pas de virions (uniquement des protéines).</li>
-              <li>(b) N I + N II → Virions des souches I et II (ARN mélangé).</li>
-              <li>(c) P I + N II → Virions de la souche II (ARN de II).</li>
-              <li>(d) P II + N I → <strong>Uniquement des virions de la souche I</strong> (ARN de I).</li>
-            </ul>
-          </div>
+					<div class="division">
+						<h3>2. Expérience d'Inoculation de Virus :</h3>
+						<p><strong>Mélanges :</strong></p>
+						<ul>
+							<li>(a) P I + P II → Pas de virions (uniquement des protéines).</li>
+							<li>(b) N I + N II → Virions des souches I et II (ARN mélangé).</li>
+							<li>(c) P I + N II → Virions de la souche II (ARN de II).</li>
+							<li>(d) P II + N I → <strong>Uniquement des virions de la souche I</strong> (ARN de I).</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>3. Pourcentages des Bases Azotées :</h3>
-            <p>Analyse de l’ADN d'une bactérie : 16,6% de thymine et 32,6% de guanine.</p>
-            <p>Calcul :</p>
-            <ul>
-              <li>Somme des autres bases : 100 - (16,6 + 32,6) = 50,8%</li>
-              <li>Adénine (A) ≈ 17,14% (somme de thymine et guanine(50.8) * somme de thymine(16.6) / % manquant(49.2)</li>
-              <li>Cytosine (C) ≈ 33,66% (même formule mais replace somme thymine par guanine)</li>
-            </ul>
-            <p><strong>Pourcentages :</strong> A ≈ 17,14%, T = 16,6%, C ≈ 33,66%, G = 32,6%</p>
-          </div>
+					<div class="division">
+						<h3>3. Pourcentages des Bases Azotées :</h3>
+						<p>Analyse de l’ADN d'une bactérie : 16,6% de thymine et 32,6% de guanine.</p>
+						<p>Calcul :</p>
+						<ul>
+							<li>Somme des autres bases : 100 - (16,6 + 32,6) = 50,8%</li>
+							<li>Adénine (A) ≈ 17,14% (somme de thymine et guanine(50.8) * somme de thymine(16.6) / % manquant(49.2)</li>
+							<li>Cytosine (C) ≈ 33,66% (même formule mais replace somme thymine par guanine)</li>
+						</ul>
+						<p><strong>Pourcentages :</strong> A ≈ 17,14%, T = 16,6%, C ≈ 33,66%, G = 32,6%</p>
+					</div>
 
-          <div class="division">
-            <h3>4. Phénomène Biologique Inexistant :</h3>
-            <p>Si la substance de l’hérédité était invariante, le phénomène de <strong>l'évolution</strong> serait inexistant.</p>
-          </div>
+					<div class="division">
+						<h3>4. Phénomène Biologique Inexistant :</h3>
+						<p>Si la substance de l’hérédité était invariante, le phénomène de <strong>l'évolution</strong> serait inexistant.</p>
+					</div>
 
-          <div class="division">
-            <h3>5. Rapport ADN dans l'Expérience de Meselson et Stahl :</h3>
-            <p>Si on poursuit l'expérience jusqu'à la génération 4, le rapport entre l'ADN de poids intermédiaire et celui de poids léger serait de <strong>2:14</strong>.</p>
-          </div>
+					<div class="division">
+						<h3>5. Rapport ADN dans l'Expérience de Meselson et Stahl :</h3>
+						<p>Si on poursuit l'expérience jusqu'à la génération 4, le rapport entre l'ADN de poids intermédiaire et celui de poids léger serait de <strong>2:14</strong>.</p>
+					</div>
 
-          <div class="division">
-            <h3>6. Types d'ADN à la Génération 4 (Réplication Dispersive) :</h3>
-            <p>À la génération 4, il y aurait un seul type d'ADN, un tout petit peu plus lourd que l’ADN 14N.</p>
-          </div>
+					<div class="division">
+						<h3>6. Types d'ADN à la Génération 4 (Réplication Dispersive) :</h3>
+						<p>À la génération 4, il y aurait un seul type d'ADN, un tout petit peu plus lourd que l’ADN 14N.</p>
+					</div>
 
-          <div class="division">
-            <h3>7. Durant la synthèse de l'ÀDN, dans quelle direction se fait l'addition des nucléotides
-              individuels sur la nouvelle chaine?</h3>
-            <p>Elle se fait sur la nouvelle chaîne de <strong>5' vers 3'</strong>, c'est-à-dire que les nucléotides sont ajoutés à l'extrémité 3' de la chaîne en croissance.</p>
-          </div>
+					<div class="division">
+						<h3>7. Durant la synthèse de l'ÀDN, dans quelle direction se fait l'addition des nucléotides individuels sur la nouvelle chaine?</h3>
+						<p>Elle se fait sur la nouvelle chaîne de <strong>5' vers 3'</strong>, c'est-à-dire que les nucléotides sont ajoutés à l'extrémité 3' de la chaîne en croissance.</p>
+					</div>
 
-          <div class="division">
-            <h3>8.  Si une chaine d'ADN se lit: 5'ATCGGACT3', sa chaine
-              complémentaire sera:</h3>
+					<div class="division">
+						<h3>8. Si une chaine d'ADN se lit: 5'ATCGGACT3', sa chaine complémentaire sera:</h3>
 
-              <p>La chaîne complémentaire d'une séquence d'ADN est formée en respectant les règles de complémentarité des bases :
-                <br>
-                A (adénine) s'apparie avec T (thymine)
-                C (cytosine) s'apparie avec G (guanine)
-                La séquence d'ADN donnée est : 5'ATCGGACT3'. La chaîne complémentaire sera :
-                <br>
-                A -> T
-                <br>
-                T -> A
-                <br>
-                C -> G
-                <br>
-                G -> C
-                <br>
-                G -> C
-                <br>
-                A -> T
-                <br>
-                C -> G
-                <br>
-                T -> A</p>
-            <p>Comme en (a), la chaîne complémentaire sera la même : <strong>5'TAGCCTGA3'</strong>.</p>
-          </div>
+						<p>
+							La chaîne complémentaire d'une séquence d'ADN est formée en respectant les règles de complémentarité des bases :
+							<br />
+							A (adénine) s'apparie avec T (thymine) C (cytosine) s'apparie avec G (guanine) La séquence d'ADN donnée est : 5'ATCGGACT3'. La chaîne complémentaire sera :
+							<br />
+							A -> T
+							<br />
+							T -> A
+							<br />
+							C -> G
+							<br />
+							G -> C
+							<br />
+							G -> C
+							<br />
+							A -> T
+							<br />
+							C -> G
+							<br />
+							T -> A
+						</p>
+						<p>Comme en (a), la chaîne complémentaire sera la même : <strong>5'TAGCCTGA3'</strong>.</p>
+					</div>
 
-          <div class="division">
-            <h3>9. L'ADN double brin contient 50% de purines et 50% de pyrimidines. Si la teneur en %
-              de l'une des bases azotées est connue, peut-on connaitre celles des autres bases?</h3>
-            <p>Oui, parce qu'une purine est toujours associée à une pyrimidine. Par exemple, si T = 15%, alors A = 15%, donc G + C = 70%. Ainsi, G et C = 35% chacun.</p>
-          </div>
+					<div class="division">
+						<h3>9. L'ADN double brin contient 50% de purines et 50% de pyrimidines. Si la teneur en % de l'une des bases azotées est connue, peut-on connaitre celles des autres bases?</h3>
+						<p>Oui, parce qu'une purine est toujours associée à une pyrimidine. Par exemple, si T = 15%, alors A = 15%, donc G + C = 70%. Ainsi, G et C = 35% chacun.</p>
+					</div>
 
-          <div class="division">
-            <h3>10.  On a déterminé la teneur en l'une des quatre bases de 3 échantillons d'ADN. Ses
-              résultats se présentent comme suit: </h3>
-              <br>
-              <table>
-                <tr>
-                  <th>Échantillon </th>
-                  <th> &nbsp; Base analysée </th>
-                  <th>  &nbsp; Pourcentage</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>&nbsp; &nbsp; cytosine</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td> &nbsp;  &nbsp; guanine</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td> &nbsp;  &nbsp; thymine</td>
-                  <td>15</td>
-                </tr>
-              </table>
-              <span style="color:white;">Lequel de ces trois échantillons ne peut provenir du même organisme que les deux
-                autres? :</span>
-              
-            <p>C'est l'échantillon 3, provenant d'un organisme où A + T/G + C = 30/70, alors que les échantillons 1 et 2 proviennent d'organismes avec A + T/G + C = 70/30.</p>
-          </div>
+					<div class="division">
+						<h3>10. On a déterminé la teneur en l'une des quatre bases de 3 échantillons d'ADN. Ses résultats se présentent comme suit:</h3>
+						<br />
+						<table>
+							<tr>
+								<th>Échantillon</th>
+								<th>&nbsp; Base analysée</th>
+								<th>&nbsp; Pourcentage</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>&nbsp; &nbsp; cytosine</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>&nbsp; &nbsp; guanine</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>&nbsp; &nbsp; thymine</td>
+								<td>15</td>
+							</tr>
+						</table>
+						<span style="color: white">Lequel de ces trois échantillons ne peut provenir du même organisme que les deux autres? :</span>
 
-          <div class="division">
-            <h2>11. Termes à Définir</h2>
-            <ul>
-              <li><strong>Procaryote</strong> : Organisme unicellulaire dépourvu de noyau et d'organites membraneux, tel que les bactéries.</li>
-              <li><strong>Phage Tempéré</strong> : Virus qui infecte les bactéries et peut se reproduire de manière lysogène, intégrant son ADN dans le génome de l'hôte.</li>
-              <li><strong>Prototrophe</strong> : Organisme capable de synthétiser tous les nutriments nécessaires à sa croissance à partir de sources simples.</li>
-              <li><strong>Eucaryote</strong> : Organisme dont les cellules possèdent un noyau bien défini et des organites membraneux, incluant les plantes, les animaux et les champignons.</li>
-              <li><strong>Bactérie Lysogène</strong> : Bactérie qui héberge un phage tempéré dans son ADN sans lyse cellulaire immédiate.</li>
-              <li><strong>Auxotrophe</strong> : Organisme qui nécessite des nutriments spécifiques qu'il ne peut pas synthétiser lui-même.</li>
-              <li><strong>Virus</strong> : Agent infectieux acellulaire qui ne peut se reproduire qu'à l'intérieur des cellules hôtes.</li>
-              <li><strong>Clone</strong> : Groupe de cellules ou d'organismes génétiquement identiques dérivés d'une seule cellule ou d'un seul individu.</li>
-              <li><strong>Conjugaison</strong> : Processus de transfert de matériel génétique entre bactéries via un contact direct, souvent par un pilus.</li>
-              <li><strong>Bactérie</strong> : Micro-organisme unicellulaire procaryote, jouant un rôle essentiel dans divers écosystèmes.</li>
-              <li><strong>Parasexualité</strong> : Échange de matériel génétique entre cellules sans reproduction sexuée, courant chez certaines bactéries et champignons.</li>
-              <li><strong>Milieu Minimum</strong> : Milieu de culture contenant uniquement les nutriments essentiels nécessaires à la croissance d'un organisme.</li>
-            </ul>
-          </div>
+						<p>C'est l'échantillon 3, provenant d'un organisme où A + T/G + C = 30/70, alors que les échantillons 1 et 2 proviennent d'organismes avec A + T/G + C = 70/30.</p>
+					</div>
 
-          <div class="division">
-            <h2>12. Quelles sont les affirmations vraies ?</h2>
-            <ul>
-              <li><strong>a)</strong> Les gènes bactériens sont portés par un seul chromosome linéaire. <strong>Faux</strong></li>
-              <li><strong>b)</strong> Les phages intégrés dans le chromosome bactérien sont dits lysogènes. <strong>Faux</strong></li>
-              <li><strong>c)</strong> L'auxotrophie correspond à la capacité d'une bactérie à proliférer sur milieu minimum. <strong>Faux</strong></li>
-            </ul>
-          </div>
+					<div class="division">
+						<h2>11. Termes à Définir</h2>
+						<ul>
+							<li><strong>Procaryote</strong> : Organisme unicellulaire dépourvu de noyau et d'organites membraneux, tel que les bactéries.</li>
+							<li><strong>Phage Tempéré</strong> : Virus qui infecte les bactéries et peut se reproduire de manière lysogène, intégrant son ADN dans le génome de l'hôte.</li>
+							<li><strong>Prototrophe</strong> : Organisme capable de synthétiser tous les nutriments nécessaires à sa croissance à partir de sources simples.</li>
+							<li><strong>Eucaryote</strong> : Organisme dont les cellules possèdent un noyau bien défini et des organites membraneux, incluant les plantes, les animaux et les champignons.</li>
+							<li><strong>Bactérie Lysogène</strong> : Bactérie qui héberge un phage tempéré dans son ADN sans lyse cellulaire immédiate.</li>
+							<li><strong>Auxotrophe</strong> : Organisme qui nécessite des nutriments spécifiques qu'il ne peut pas synthétiser lui-même.</li>
+							<li><strong>Virus</strong> : Agent infectieux acellulaire qui ne peut se reproduire qu'à l'intérieur des cellules hôtes.</li>
+							<li><strong>Clone</strong> : Groupe de cellules ou d'organismes génétiquement identiques dérivés d'une seule cellule ou d'un seul individu.</li>
+							<li><strong>Conjugaison</strong> : Processus de transfert de matériel génétique entre bactéries via un contact direct, souvent par un pilus.</li>
+							<li><strong>Bactérie</strong> : Micro-organisme unicellulaire procaryote, jouant un rôle essentiel dans divers écosystèmes.</li>
+							<li><strong>Parasexualité</strong> : Échange de matériel génétique entre cellules sans reproduction sexuée, courant chez certaines bactéries et champignons.</li>
+							<li><strong>Milieu Minimum</strong> : Milieu de culture contenant uniquement les nutriments essentiels nécessaires à la croissance d'un organisme.</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h2>13. Quelles sont les affirmations vraies ?</h2>
-            <ul>
-              <li><strong>a)</strong> Le facteur F n'est pas intégré dans le chromosome d'une bactérie Hfr. <strong>Faux</strong></li>
-              <li><strong>b)</strong> Les pili sexuels relient deux bactéries F+ lors de la conjugaison. <strong>Faux</strong></li>
-              <li><strong>c)</strong> Le transfert d'ADN d'une bactérie Hfr vers une bactérie F- est unidirectionnel. <strong>Vrai</strong></li>
-              <li><strong>d)</strong> C'est sous la forme monobrin que l'ADN est transféré lors de la conjugaison. <strong>Vrai</strong></li>
-            </ul>
-          </div>
+					<div class="division">
+						<h2>12. Quelles sont les affirmations vraies ?</h2>
+						<ul>
+							<li><strong>a)</strong> Les gènes bactériens sont portés par un seul chromosome linéaire. <strong>Faux</strong></li>
+							<li><strong>b)</strong> Les phages intégrés dans le chromosome bactérien sont dits lysogènes. <strong>Faux</strong></li>
+							<li><strong>c)</strong> L'auxotrophie correspond à la capacité d'une bactérie à proliférer sur milieu minimum. <strong>Faux</strong></li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h2>14. Bactérie de type F</h2>
-            <p>
-              Une bactérie qui possède le facteur F peut le transférer à une bactérie qui ne le possède pas. Ainsi, des bactéries auxotrophes peuvent devenir prototrophes. Par quel phénomène peut
-              s’effectuer le transfert des gènes menant à la prototrophie ?
-            </p>
-            <p>Le transfert des gènes menant à la prototrophie peut s’effectuer par <strong>conjugaison</strong>.</p>
-            <p>Deux situations qui permettraient ce transfert :</p>
-            <ul>
-              <li>1. Lorsqu'une bactérie F+ transfère son ADN à une bactérie F- via un pilus sexuel.</li>
-              <li>2. Lorsqu'une bactérie Hfr transfère une partie de son ADN chromosomique à une bactérie F- pendant la conjugaison.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+					<div class="division">
+						<h2>13. Quelles sont les affirmations vraies ?</h2>
+						<ul>
+							<li><strong>a)</strong> Le facteur F n'est pas intégré dans le chromosome d'une bactérie Hfr. <strong>Faux</strong></li>
+							<li><strong>b)</strong> Les pili sexuels relient deux bactéries F+ lors de la conjugaison. <strong>Faux</strong></li>
+							<li><strong>c)</strong> Le transfert d'ADN d'une bactérie Hfr vers une bactérie F- est unidirectionnel. <strong>Vrai</strong></li>
+							<li><strong>d)</strong> C'est sous la forme monobrin que l'ADN est transféré lors de la conjugaison. <strong>Vrai</strong></li>
+						</ul>
+					</div>
 
-      <section class="semaine">
-        <h2 class="semaineTitre">Semaine 3: Mitose, Méiose</h2>
+					<div class="division">
+						<h2>14. Bactérie de type F</h2>
+						<p>
+							Une bactérie qui possède le facteur F peut le transférer à une bactérie qui ne le possède pas. Ainsi, des bactéries auxotrophes peuvent devenir prototrophes. Par quel phénomène peut s’effectuer le transfert des gènes menant à la prototrophie ?
+						</p>
+						<p>Le transfert des gènes menant à la prototrophie peut s’effectuer par <strong>conjugaison</strong>.</p>
+						<p>Deux situations qui permettraient ce transfert :</p>
+						<ul>
+							<li>1. Lorsqu'une bactérie F+ transfère son ADN à une bactérie F- via un pilus sexuel.</li>
+							<li>2. Lorsqu'une bactérie Hfr transfère une partie de son ADN chromosomique à une bactérie F- pendant la conjugaison.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-        <div class="semaineContenu">
-          <div class="division">
-            <h3>1. Processus : Autoduplication</h3>
-            <p>Un chromosome persiste à travers les générations de cellules et d'individus par :</p>
-            <ul>
-              <li><strong>Autoduplication :</strong> Réplication lors de la division cellulaire.</li>
-              <li><strong>Transmission héréditaire :</strong> Transmission du matériel génétique par les gamètes.</li>
-              <li><strong>Mécanismes de réparation de l'ADN :</strong> Correction des mutations pour stabiliser le matériel génétique.</li>
-              <li><strong>Évolution et sélection naturelle :</strong> Adaptation par mutation et sélection des chromosomes avantageux.</li>
-            </ul>
-          </div>
+			<section class="semaine">
+				<h2 class="semaineTitre">Semaine 3: Mitose, Méiose</h2>
 
-          <div class="division"><p>Ajouter graphe de méiose.</p></div>
+				<div class="semaineContenu">
+					<div class="division">
+						<h3>1. Processus : Autoduplication</h3>
+						<p>Un chromosome persiste à travers les générations de cellules et d'individus par :</p>
+						<ul>
+							<li><strong>Autoduplication :</strong> Réplication lors de la division cellulaire.</li>
+							<li><strong>Transmission héréditaire :</strong> Transmission du matériel génétique par les gamètes.</li>
+							<li><strong>Mécanismes de réparation de l'ADN :</strong> Correction des mutations pour stabiliser le matériel génétique.</li>
+							<li><strong>Évolution et sélection naturelle :</strong> Adaptation par mutation et sélection des chromosomes avantageux.</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>3. Nombre Chromosomique de Cannabis sativa</h3>
-            <p>Le nombre chromosomique somatique de Cannabis sativa est 2n = 20. Voici le nombre de chromosomes pour différents types de cellules :</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type de cellule</th>
-                  <th>Nombre de chromosomes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Microsporocyte de 1er ordre</td>
+					<div class="division"><p>Ajouter graphe de méiose.</p></div>
 
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>Microspore</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Noyau de la cellule végétative</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Synergide</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Noyau du zygote</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>Noyau de cellule embryonnaire</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>Noyau d'une cellule d'albumen</td>
-                  <td>30</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+					<div class="division">
+						<h3>3. Nombre Chromosomique de Cannabis sativa</h3>
+						<p>Le nombre chromosomique somatique de Cannabis sativa est 2n = 20. Voici le nombre de chromosomes pour différents types de cellules :</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Type de cellule</th>
+									<th>Nombre de chromosomes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Microsporocyte de 1er ordre</td>
 
-          <div class="division">
-            <h3>4. Définitions</h3>
-            <ul>
-              <li>
-                <strong>Homologue :</strong> Se dit de chromosomes qui ont la même structure et la même séquence de gènes, mais peuvent avoir des allèles différents. Un organisme diploïde possède une
-                paire de chromosomes homologues.
-              </li>
-              <li>
-                <strong>Cytocinèse :</strong> Processus par lequel le cytoplasme d'une cellule se divise, aboutissant à la formation de deux cellules filles distinctes, généralement après la mitose ou
-                la méiose.
-              </li>
-              <li>
-                <strong>Carotype :</strong> Représentation graphique du nombre, de la forme et de la taille des chromosomes d'un organisme, généralement obtenue à partir de cellules en division.
-              </li>
-              <li>
-                <strong>Interphase :</strong> Phase du cycle cellulaire où la cellule se prépare à la division. Elle est subdivisée en trois étapes : la phase G1 (croissance), la phase S (réplication
-                de l'ADN) et la phase G2 (préparation à la mitose).
-              </li>
-              <li>
-                <strong>Division équationnelle :</strong> Type de division cellulaire (mitose) où le nombre de chromosomes reste constant, chaque cellule fille recevant une copie complète du matériel
-                génétique.
-              </li>
-              <li>
-                <strong>Idéogramme :</strong> Représentation graphique simplifiée du caryotype, illustrant les chromosomes d'un individu en mettant l'accent sur leur taille, leur forme et leur nombre.
-              </li>
-              <li>
-                <strong>Mitose :</strong> Processus de division cellulaire qui permet la formation de deux cellules filles génétiquement identiques à la cellule mère, impliquant plusieurs étapes :
-                prophase, métaphase, anaphase et télophase.
-              </li>
-              <li>
-                <strong>Anaphase :</strong> Étape de la mitose durant laquelle les chromatides sœurs se séparent et sont tirées vers les pôles opposés de la cellule, assurant ainsi que chaque cellule
-                fille recevra un ensemble complet de chromosomes.
-              </li>
-            </ul>
-          </div>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>Microspore</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Noyau de la cellule végétative</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Synergide</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Noyau du zygote</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>Noyau de cellule embryonnaire</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>Noyau d'une cellule d'albumen</td>
+									<td>30</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-          <div class="division">
-            <h3>5. Nombre de Chromatides chez l'Homme (2n = 46)</h3>
-            <p>Le nombre de chromatides à différentes phases de la mitose est le suivant :</p>
-            <ul>
-              <li><strong>(a) Prométaphase mitotique :</strong> 92 chromatides</li>
-              <li><strong>(b) Anaphase mitotique :</strong> 0 chromatides, car les chromosomes ne sont pas encore dédoublés en chromatides à ce stade.</li>
-            </ul>
-          </div>
+					<div class="division">
+						<h3>4. Définitions</h3>
+						<ul>
+							<li><strong>Homologue :</strong> Se dit de chromosomes qui ont la même structure et la même séquence de gènes, mais peuvent avoir des allèles différents. Un organisme diploïde possède une paire de chromosomes homologues.</li>
+							<li><strong>Cytocinèse :</strong> Processus par lequel le cytoplasme d'une cellule se divise, aboutissant à la formation de deux cellules filles distinctes, généralement après la mitose ou la méiose.</li>
+							<li><strong>Carotype :</strong> Représentation graphique du nombre, de la forme et de la taille des chromosomes d'un organisme, généralement obtenue à partir de cellules en division.</li>
+							<li>
+								<strong>Interphase :</strong> Phase du cycle cellulaire où la cellule se prépare à la division. Elle est subdivisée en trois étapes : la phase G1 (croissance), la phase S (réplication de l'ADN) et la phase G2 (préparation à la mitose).
+							</li>
+							<li><strong>Division équationnelle :</strong> Type de division cellulaire (mitose) où le nombre de chromosomes reste constant, chaque cellule fille recevant une copie complète du matériel génétique.</li>
+							<li><strong>Idéogramme :</strong> Représentation graphique simplifiée du caryotype, illustrant les chromosomes d'un individu en mettant l'accent sur leur taille, leur forme et leur nombre.</li>
+							<li><strong>Mitose :</strong> Processus de division cellulaire qui permet la formation de deux cellules filles génétiquement identiques à la cellule mère, impliquant plusieurs étapes : prophase, métaphase, anaphase et télophase.</li>
+							<li><strong>Anaphase :</strong> Étape de la mitose durant laquelle les chromatides sœurs se séparent et sont tirées vers les pôles opposés de la cellule, assurant ainsi que chaque cellule fille recevra un ensemble complet de chromosomes.</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>6. Variation Héréditaire chez les Espèces Asexuées</h3>
-            <p>Les espèces qui ne se reproduisent qu'asexuellement, avec des divisions cellulaires exclusivement mitotiques, auront une variation héréditaire :</p>
-            <p>
-              <strong>Non.</strong> La mitose est une division équationnelle, produisant des cellules identiques. En revanche, la méiose, par la ségrégation aléatoire des homologues et le
-              crossing-over, génère de nouvelles combinaisons de chromatides, ce qui constitue une source inépuisable de variation héréditaire.
-            </p>
-          </div>
+					<div class="division">
+						<h3>5. Nombre de Chromatides chez l'Homme (2n = 46)</h3>
+						<p>Le nombre de chromatides à différentes phases de la mitose est le suivant :</p>
+						<ul>
+							<li><strong>(a) Prométaphase mitotique :</strong> 92 chromatides</li>
+							<li><strong>(b) Anaphase mitotique :</strong> 0 chromatides, car les chromosomes ne sont pas encore dédoublés en chromatides à ce stade.</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>7. Nombres Chromosomiques dans les Croisements de Cannabis sativa</h3>
-            <p>Pour les croisements entre les souches diploïdes (2n = 20) et tétraploïdes (2n = 40), les résultats sont les suivants :</p>
+					<div class="division">
+						<h3>6. Variation Héréditaire chez les Espèces Asexuées</h3>
+						<p>Les espèces qui ne se reproduisent qu'asexuellement, avec des divisions cellulaires exclusivement mitotiques, auront une variation héréditaire :</p>
+						<p>
+							<strong>Non.</strong> La mitose est une division équationnelle, produisant des cellules identiques. En revanche, la méiose, par la ségrégation aléatoire des homologues et le crossing-over, génère de nouvelles combinaisons de chromatides, ce
+							qui constitue une source inépuisable de variation héréditaire.
+						</p>
+					</div>
 
-            <h4>Croisement 2x ♀ x 4x ♂</h4>
-            <ul>
-              <li><strong>Embryon :</strong> 10 + 20 = 30</li>
-              <li><strong>Albumen :</strong> 20 + 20 = 40</li>
-            </ul>
+					<div class="division">
+						<h3>7. Nombres Chromosomiques dans les Croisements de Cannabis sativa</h3>
+						<p>Pour les croisements entre les souches diploïdes (2n = 20) et tétraploïdes (2n = 40), les résultats sont les suivants :</p>
 
-            <h4>Croisement réciproque 4x ♀ x 2x ♂</h4>
-            <ul>
-              <li><strong>Embryon :</strong> 20 + 10 = 30</li>
-              <li><strong>Albumen :</strong> 40 + 10 = 50</li>
-            </ul>
-          </div>
+						<h4>Croisement 2x ♀ x 4x ♂</h4>
+						<ul>
+							<li><strong>Embryon :</strong> 10 + 20 = 30</li>
+							<li><strong>Albumen :</strong> 20 + 20 = 40</li>
+						</ul>
 
-          <div class="division">
-            <h3>8. Recombinaison Méiotique</h3>
-            <p>Parmi les énoncés suivants, lequel est faux ?</p>
-            <ul>
-              <li>
-                <p><strong>a.</strong> Toutes les chromatides-soeurs d’un même chromosome recombinent toujours au même endroit avec les chromatides-soeurs du chromosome homologue. <em>(Faux)</em></p>
-              </li>
-              <li><strong>b.</strong> Les chiasmas commencent à se former lors du stade diplotène. <em>(Vrai)</em></li>
-              <li><strong>c.</strong> Elle permet un brassage génétique performant lors de la formation des gamètes. <em>(Vrai)</em></li>
-              <li><strong>d.</strong> Elle nécessite deux fractures distinctes sur les chromosomes homologues. <em>(Vrai)</em></li>
-            </ul>
-          </div>
+						<h4>Croisement réciproque 4x ♀ x 2x ♂</h4>
+						<ul>
+							<li><strong>Embryon :</strong> 20 + 10 = 30</li>
+							<li><strong>Albumen :</strong> 40 + 10 = 50</li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>9. Définition d’un « Gamétophyte »</h3>
-            <p>La meilleure définition d’un « gamétophyte » ?</p>
-            <ul>
-              <li>Bien que produit par la méiose, le gamétophyte est le résultat de plusieurs mitoses de cellules haploïdes.</li>
-            </ul>
-          </div>
+					<div class="division">
+						<h3>8. Recombinaison Méiotique</h3>
+						<p>Parmi les énoncés suivants, lequel est faux ?</p>
+						<ul>
+							<li>
+								<p><strong>a.</strong> Toutes les chromatides-soeurs d’un même chromosome recombinent toujours au même endroit avec les chromatides-soeurs du chromosome homologue. <em>(Faux)</em></p>
+							</li>
+							<li><strong>b.</strong> Les chiasmas commencent à se former lors du stade diplotène. <em>(Vrai)</em></li>
+							<li><strong>c.</strong> Elle permet un brassage génétique performant lors de la formation des gamètes. <em>(Vrai)</em></li>
+							<li><strong>d.</strong> Elle nécessite deux fractures distinctes sur les chromosomes homologues. <em>(Vrai)</em></li>
+						</ul>
+					</div>
 
-          <div class="division">
-            <h3>10. Image des 5 sous-phases des chromosomes</h3>
-            <p>à faire...</p>
-          </div>
-        </div>
-      </section>
+					<div class="division">
+						<h3>9. Définition d’un « Gamétophyte »</h3>
+						<p>La meilleure définition d’un « gamétophyte » ?</p>
+						<ul>
+							<li>Bien que produit par la méiose, le gamétophyte est le résultat de plusieurs mitoses de cellules haploïdes.</li>
+						</ul>
+					</div>
 
-      <section class="semaine">
-        <h2 class="semaineTitre">Semaine 4 - Mendel 1</h2>
-        <div class="semaineContenu">
-            <div class="division">
-                <h3>4-1. S'il n'y avait pas de ségrégation des chromosomes à la méiose, quels gamètes obtiendrait-on à partir d'un individu Aa ?</h3>
-                <p>Réponse : 100% Aa et non pas 50% A et 50% a.</p>
-            </div>
-            <div class="division">
-                <h3>4-2. Chez la Tomate, la chair du fruit peut être rouge ou jaune. Une série de croisements a donné les résultats suivants :</h3>
-                <p>Réponse : Rouge est le caractère dominant. Si A = rouge et a = jaune, les génotypes des parents de chaque croisement sont :
-                    <ul>
-                        <li>(a) AA et AA ou l'un AA et l'autre Aa</li>
-                        <li>(b) AA et aa</li>
-                        <li>(c) Aa et aa</li>
-                        <li>(d) aa et aa</li>
-                        <li>(e) Aa et Aa</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="division">
-                <h3>4-3. Chez les bovins de race Holstein, la pigmentation de la robe par taches irrégulières est récessive, alors que la pigmentation continue est dominante. Si un éleveur préfère un troupeau d'animaux irrégulièrement tachetés, quel génotype de parents choisira-t-il ?</h3>
-                <p>Réponse : Il choisira des parents irrégulièrement tachetés (caractère récessif) et en ce faisant, il éliminera l'allèle dominant.</p>
-            </div>
-            <div class="division">
-                <h3>4-4. Chez les bovins de certaines races, la robe est rouge, blanche ou rouanne. À partir des résultats indiqués ci-après, nommez le phénomène en cause et indiquez les génotypes des types d'individus mentionnés.</h3>
-                <p>Réponse : Tous les faits présentés dans les croisements s'interprètent parfaitement s'il on suppose qu'il s'agit d'un cas d'absence de dominance. 
-                    En représentant "robe rouge" par A et "robe blanche" par A', les génotypes sont :
-                    <ul>
-                        <li>(a) AA × AA = AA</li>
-                        <li>(b) A'A' × A'A' = A'A'</li>
-                        <li>(c) AA × A'A' = AA'</li>
-                        <li>(d) AA' × A'A' = 1 AA' : 1 A'A'</li>
-                        <li>(e) AA' × AA = 1 AA' : 1 AA</li>
-                        <li>(f) AA' × AA' = 2AA' : 1 AA : 1 A'A'</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="division">
-                <h3>4-5. Chez le Pois de jardin, on observe des variétés à fleurs rouges et à fleurs blanches...</h3>
-                <p>Réponse : 
-                    <ul>
-                        <li>(a) Fleur rouge est dominant et fleur blanche est récessif ;</li>
-                        <li>(b) RR = à fleurs rouges et rr = à fleurs blanches ;</li>
-                        <li>(c) tous deux Rr ;</li>
-                        <li>(d) à fleurs rouges = Rr, à fleurs blanches = rr ;</li>
-                        <li>(e) deux types dans le rapport 1R : 1r.</li>
-                    </ul>
-                </p>
-            </div>
+					<div class="division">
+						<h3>10. Image des 5 sous-phases des chromosomes</h3>
+						<p>à faire...</p>
+					</div>
+				</div>
+			</section>
 
-            <div class="division">
-              <h3>4-6. Chez la Mouche à fruits, Drosophila melanogaster, un croisement entre deux mouches aux ailes longues (P<sub>1</sub>) a donné une F<sub>1</sub> de 250 individus aux ailes longues et 80 aux ailes vestigiales (réduites à des moignons). En croisant entre eux les individus aux ailes vestigiales, on obtient seulement d'autres individus aux ailes vestigiales. Lorsque des individus aux ailes longues de la F<sub>1</sub>, lorsque croisés à des individus aux ailes vestigiales, se répartissent en deux groupes : 87 ne donnent que des descendants aux ailes longues et 163 des descendants aux ailes longues ou aux ailes vestigiales dans le rapport approximatif de 1:1.</h3>
-              <p>Réponse :
-                  <ul>
-                      <li>(a) Le caractère dominant est les ailes longues (Vg+).</li>
-                      <li>(b) Le caractère récessif est les ailes vestigiales (vg).</li>
-                      <li>(c) Les génotypes des deux mouches de la P<sub>1</sub> sont Vg+Vg+ et vgvg.</li>
-                      <li>(d) Les génotypes des descendants de F<sub>1</sub> avec ailes longues sont Vg+vg.</li>
-                      <li>(e) Les génotypes des parents d'un croisement dans la progéniture duquel on n'observe que des individus aux ailes vestigiales sont vgvg × vgvg.</li>
-                      <li>(f) Les génotypes des parents d'un croisement dans la progéniture duquel on observe approximativement 1 individu aux ailes longues : 1 individu aux ailes vestigiales sont Vg+vg × vgvg.</li>
-                  </ul>
-              </p>
-          </div>
-          <div class="division">
-              <h3>4-7. L'Avoine se reproduit par autofécondation et ses grains peuvent être blancs ou jaunes. Un croisement « grain jaune × grain blanc » a donné seulement des plantes à grains jaunes qui, par autofécondation, ont produit une F<sub>2</sub> dans laquelle il y avait 3 fois plus de plantes à grains jaunes que de plantes à grains blancs.</h3>
-              <p>Réponse :
-                  <ul>
-                      <li>(a) Le caractère dominant est le grain jaune.</li>
-                      <li>(b) Le parent de la P<sub>1</sub> croisé est homozygote pour le grain jaune (YY) et le parent à grain blanc est homozygote récessif (yy).</li>
-                      <li>(c) Pour déterminer les individus F<sub>2</sub> hétérozygotes (Yy), il faut faire un test de croisement avec un individu homozygote récessif (yy). Les individus donnant des descendants à grains jaunes et blancs sont hétérozygotes, tandis que ceux ne donnant que des grains jaunes sont homozygotes.</li>
-                  </ul>
-              </p>
-          </div>
-          <div class="division">
-              <h3>4-8. Chez l'Homme, certaines maladies graves et fatales, par ex. la chorée de Huntington, sont héréditaires et de type dominant, et ne se manifestent que vers la cinquantaine. Un homme de 20 ans, normal, apprend que sa mère a une telle maladie. Quelle est la probabilité qu'il aura lui-même cette maladie ?</h3>
-              <p>Réponse : La chorée de Huntington est une maladie autosomique dominante. Puisque la mère de l'homme est atteinte, elle a probablement un génotype Hh (H = allèle dominant pour la maladie, h = allèle sain). L'homme a donc 50% de chances d'hériter de l'allèle H et donc de développer la maladie.</p>
-          </div>
-          <div class="division">
-              <h3>4-9. L'albinisme (absence de pigment dans la peau, les yeux et les poils) chez l'Homme est rare, et se présente comme suit :</h3>
-              <p>Réponse :
-                  <ul>
-                      <li>(a) L'union entre albinos ne donne que des albinos, ce qui signifie que l'albinisme est un trait récessif (aa × aa = aa).</li>
-                      <li>(b) L'union entre un albinos (aa) et un non albinos (AA ou Aa) donne presque toujours des non albinos, ce qui indique que l'allèle non albinos est dominant.</li>
-                      <li>(c) L'union entre un albinos (aa) et un hétérozygote (Aa) donne environ 50% d'albinos et 50% de non albinos.</li>
-                  </ul>
-              </p>
-          </div>
-          <div class="division">
-              <h3>4-10. Une femme de groupe sanguin A a un enfant de groupe 0, dont elle attribue la paternité à un homme de groupe B. Cet homme peut-il être le père de cet enfant ?</h3>
-              <p>Réponse : Oui, l'homme peut être le père. La femme de groupe sanguin A peut être de génotype AO, et l'homme de groupe sanguin B peut être de génotype BO. L'enfant de groupe O a le génotype OO, ce qui est possible si chaque parent lui a transmis un allèle O.</p>
-          </div>
+			<section class="semaine">
+				<h2 class="semaineTitre">Semaine 4 - Mendel 1</h2>
+				<div class="semaineContenu">
+					<div class="division">
+						<h3>4-1. S'il n'y avait pas de ségrégation des chromosomes à la méiose, quels gamètes obtiendrait-on à partir d'un individu Aa ?</h3>
+						<p>Réponse : 100% Aa et non pas 50% A et 50% a.</p>
+					</div>
+					<div class="division">
+						<h3>4-2. Chez la Tomate, la chair du fruit peut être rouge ou jaune. Une série de croisements a donné les résultats suivants :</h3>
 
-          <div class="division">
-            <h3>4-11. Dans l'un de ses livres, Darwin a présenté les résultats de nombreux croisements qu'il fit entre les deux (distylie) ou trois (tristylie) formes d'espèces hétérostylées. Les données qui suivent proviennent de croisements faits chez une espèce distylée (fleur brévistylée i.e. au style court et aux étamines longues ; fleur longistylée i.e. au style long et aux étamines courtes).</h3>
-            <p>Réponse :
-                <ul>
-                    <li>(1) La relation interallélique exprimée ici est une dominance incomplète, car les deux types de fleurs (brévistylée et longistylée) sont présents en proportions similaires dans la progéniture.</li>
-                    <li>(2)
-                        <ul>
-                            <li>(a) Le génotype de la plante longistylée no. 1 est AA.</li>
-                            <li>(b) Le génotype de la plante longistylée no. 2 est Aa.</li>
-                            <li>(c) Le génotype de la plante brévistylée no. 3 est aa.</li>
-                            <li>(d) Le génotype de la plante brévistylée no. 4 est Aa.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <div class="division">
-            <h3>4-12. Chez l'Homme, les groupes sanguins MN s'expriment par trois phénotypes : antigène M seulement ; antigène N seulement ; antigènes M et N. Les diverses unions possibles ont donné les progénitures indiquées ci-après.</h3>
-            <p>Réponse :
-                <ul>
-                    <li>(a) Le système génétique responsable du déterminisme des groupes sanguins MN chez l'Homme est un système de codominance. Les allèles M et N sont codominants, ce qui explique la présence de trois phénotypes différents : M, N et MN.</li>
-                    <li>(b) Les génotypes des individus des groupes sanguins :
-                        <ul>
-                            <li>Groupe sanguin M : MM</li>
-                            <li>Groupe sanguin N : NN</li>
-                            <li>Groupe sanguin MN : MN</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <div class="division">
-            <h3>4-13. Le pédigrée du caractère « cheveux laineux » a été étudié sur 5 générations et il est présent dans toutes les générations. Lorsqu'il existe dans une progéniture, l'un des deux parents le possède ; l'ancêtre marqué (= celui qui possède le caractère « cheveux laineux ») immédiat d'une famille peut être aussi bien un homme qu'une femme, et dans les descendances le caractère marque aussi bien les hommes que les femmes ; parmi les enfants marqués et non marqués des 20 mariages dans lesquels l'un des parents est marqué, on observe 38 individus à cheveux laineux et 43 à cheveux non laineux.</h3>
-            <p>Réponse :
-                <ul>
-                    <li>(a) Le caractère « cheveux laineux » est dominant (L), car il est présent dans toutes les générations et chaque parent marqué peut transmettre le caractère à sa progéniture.</li>
-                    <li>(b) Les génotypes des individus :
-                        <ul>
-                            <li>Cheveux laineux : LL ou Ll</li>
-                            <li>Cheveux non laineux : ll</li>
-                        </ul>
-                    </li>
-                    <li>(c) Représentation des phénotypes et génotypes :
-                        <br>Génération 1 :
-                        <ul>
-                            <li>♂ (LL ou Ll) × ♀ (ll)</li>
-                        </ul>
-                        Génération 2 :
-                        <ul>
-                            <li>3 garçons : 2 aux cheveux laineux (LL ou Ll), 1 aux cheveux non laineux (ll)</li>
-                            <li>5 filles : 2 aux cheveux laineux (LL ou Ll), 3 aux cheveux non laineux (ll)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-        </div>
-        </div>
-    </section>
+						<table>
+							<thead>
+								<tr>
+									<th>Croisement</th>
+									<th>Progéniture</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>(a) rouge x rouge</td>
+									<td>150 rouges</td>
+								</tr>
+								<tr>
+									<td>(b) rouge x jaune</td>
+									<td>175 rouges</td>
+								</tr>
+								<tr>
+									<td>(c) rouge x jaune</td>
+									<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 78 rouges : 80 jaunes</td>
+								</tr>
+								<tr>
+									<td>(d) jaune x jaune</td>
+									<td>168 jaunes</td>
+								</tr>
+								<tr>
+									<td>(e) rouge x rouge</td>
+									<td>125 rouges : 40 jaunes</td>
+								</tr>
+							</tbody>
+						</table>
 
-      <button class="toggle">Toggle Button</button>
-    </main>
-  </body>
+						<br />
+						<hr />
+						<br />
+
+						<p>Réponse : Rouge est le caractère dominant. Si A = rouge et a = jaune, les génotypes des parents de chaque croisement sont :</p>
+						<ul>
+							<li>(a) AA et AA ou l'un AA et l'autre Aa</li>
+							<li>(b) AA et aa</li>
+							<li>(c) Aa et aa</li>
+							<li>(d) aa et aa</li>
+							<li>(e) Aa et Aa</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>
+							4-3. Chez les bovins de race Holstein, la pigmentation de la robe par taches irrégulières est récessive, alors que la pigmentation continue est dominante. Si un éleveur préfère un troupeau d'animaux irrégulièrement tachetés, quel génotype de
+							parents choisira-t-il ?
+						</h3>
+						<p>Réponse : Il choisira des parents irrégulièrement tachetés (caractère récessif) et en ce faisant, il éliminera l'allèle dominant.</p>
+					</div>
+					<div class="division">
+						<h3>4-4. Chez les bovins de certaines races, la robe est rouge, blanche ou rouanne. À partir des résultats indiqués ci-après, nommez le phénomène en cause et indiquez les génotypes des types d'individus mentionnés.</h3>
+						<p>Réponse : Tous les faits présentés dans les croisements s'interprètent parfaitement s'il on suppose qu'il s'agit d'un cas d'absence de dominance.</p>
+						<p>En représentant "robe rouge" par A et "robe blanche" par A', les génotypes sont :</p>
+						<ul>
+							<li>(a) AA × AA = AA</li>
+							<li>(b) A'A' × A'A' = A'A'</li>
+							<li>(c) AA × A'A' = AA'</li>
+							<li>(d) AA' × A'A' = 1 AA' : 1 A'A'</li>
+							<li>(e) AA' × AA = 1 AA' : 1 AA</li>
+							<li>(f) AA' × AA' = 2AA' : 1 AA : 1 A'A'</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>4-5. Chez le Pois de jardin, on observe des variétés à fleurs rouges et à fleurs blanches...</h3>
+						<p>Réponse :</p>
+						<ul>
+							<li>(a) Fleur rouge est dominant et fleur blanche est récessif ;</li>
+							<li>(b) RR = à fleurs rouges et rr = à fleurs blanches ;</li>
+							<li>(c) tous deux Rr ;</li>
+							<li>(d) à fleurs rouges = Rr, à fleurs blanches = rr ;</li>
+							<li>(e) deux types dans le rapport 1R : 1r.</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>
+							4-6. Chez la Mouche à fruits, Drosophila melanogaster, un croisement entre deux mouches aux ailes longues (P<sub>1</sub>) a donné une F<sub>1</sub> de 250 individus aux ailes longues et 80 aux ailes vestigiales (réduites à des moignons). En
+							croisant entre eux les individus aux ailes vestigiales, on obtient seulement d'autres individus aux ailes vestigiales. Lorsque des individus aux ailes longues de la F<sub>1</sub>, lorsque croisés à des individus aux ailes vestigiales, se
+							répartissent en deux groupes : 87 ne donnent que des descendants aux ailes longues et 163 des descendants aux ailes longues ou aux ailes vestigiales dans le rapport approximatif de 1:1.
+						</h3>
+						<p>Réponse :</p>
+						<ul>
+							<li>(a) Le caractère dominant est les ailes longues (Vg+).</li>
+							<li>(b) Le caractère récessif est les ailes vestigiales (vg).</li>
+							<li>(c) Les génotypes des deux mouches de la P<sub>1</sub> sont Vg+Vg+ et vgvg.</li>
+							<li>(d) Les génotypes des descendants de F<sub>1</sub> avec ailes longues sont Vg+vg.</li>
+							<li>(e) Les génotypes des parents d'un croisement dans la progéniture duquel on n'observe que des individus aux ailes vestigiales sont vgvg × vgvg.</li>
+							<li>(f) Les génotypes des parents d'un croisement dans la progéniture duquel on observe approximativement 1 individu aux ailes longues : 1 individu aux ailes vestigiales sont Vg+vg × vgvg.</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>
+							4-7. L'Avoine se reproduit par autofécondation et ses grains peuvent être blancs ou jaunes. Un croisement « grain jaune × grain blanc » a donné seulement des plantes à grains jaunes qui, par autofécondation, ont produit une F<sub>2</sub> dans
+							laquelle il y avait 3 fois plus de plantes à grains jaunes que de plantes à grains blancs.
+						</h3>
+						<p>Réponse :</p>
+						<ul>
+							<li>(a) Le caractère dominant est le grain jaune.</li>
+							<li>(b) Le parent de la P<sub>1</sub> croisé est homozygote pour le grain jaune (YY) et le parent à grain blanc est homozygote récessif (yy).</li>
+							<li>
+								(c) Pour déterminer les individus F<sub>2</sub> hétérozygotes (Yy), il faut faire un test de croisement avec un individu homozygote récessif (yy). Les individus donnant des descendants à grains jaunes et blancs sont hétérozygotes, tandis que
+								ceux ne donnant que des grains jaunes sont homozygotes.
+							</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>
+							4-8. Chez l'Homme, certaines maladies graves et fatales, par ex. la chorée de Huntington, sont héréditaires et de type dominant, et ne se manifestent que vers la cinquantaine. Un homme de 20 ans, normal, apprend que sa mère a une telle
+							maladie. Quelle est la probabilité qu'il aura lui-même cette maladie ?
+						</h3>
+						<p>Réponse : Sa mère est presque certainement hétérozygote (Aa) parce que ces maladies sont rares. La probabilité que cet homme ait reçu l'allèle A de sa mère est donc de 1/2.</p>
+					</div>
+					<div class="division">
+						<h3>4-9. L'albinisme (absence de pigment dans la peau, les yeux et les poils) chez l'Homme est rare, et se présente comme suit :</h3>
+						<p>Réponse :</p>
+						<ul>
+							<li>(a) aa × aa = aa.</li>
+							<li>(b) Aa × aa = Aa : aa = 1:1.</li>
+							<li>(c) Aa × Aa = 3:1.</li>
+						</ul>
+					</div>
+					<div class="division">
+						<h3>4-10. Une femme de groupe sanguin A a un enfant de groupe 0, dont elle attribue la paternité à un homme de groupe B. Cet homme peut-il être le père de cet enfant ?</h3>
+						<p>Réponse : Oui, car l'homme peut être de génotype BO, et la femme peut être de génotype AO.</p>
+					</div>
+					<div class="division">
+						<h3>4-11. Dans l'un de ses livres, Darwin a présenté les résultats de nombreux croisements qu'il fit entre les deux (distylie) ou trois (tristylie) formes d'espèces hétérostylées...</h3>
+						<p>Réponse : Brévistylée est un caractère dominant et longistylé est un caractère récessif.</p>
+						<ul>
+							<li>(a) AA ;</li>
+							<li>(b) Aa ;</li>
+							<li>(c) aa ;</li>
+							<li>(d) 1 AA : 2 Aa : 1 aa ;</li>
+							<li>(e) 1 longistylée.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<button class="toggle">Toggle Button</button>
+		</main>
+	</body>
 </html>
